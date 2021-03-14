@@ -38,7 +38,6 @@ int _printf(const char *format, ...)
 
                         if (operator == NULL)
                         {
-                                _write('%');
                                 _write(format[indexf]);
                         /* wasn't sure if i needed to increment count */
                         }
