@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 int print_char(va_list args)
 {
         _write(va_arg(args, int));
