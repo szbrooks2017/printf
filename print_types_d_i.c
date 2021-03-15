@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdarg.h>
 /**
  *print_int - prints integers
  *@args: type to check against
@@ -18,6 +19,7 @@ int print_int(va_list args)
  */
 int print_d_type_int(va_list args)
 {
-	_write(va_args(args, int));
+	_write(va_arg(args, int));
 	return (1);
 }
+
