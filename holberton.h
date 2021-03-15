@@ -3,10 +3,17 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/**
+* struct specifier - is a new type defining a converter struct.
+* @specifier: represents a conversion specifier
+* @f: a pointer to a function according to the specifier
+*/
+
 typedef struct specifier
 {
-        char* specifier;
-        int(*f)(va_list);
+	char *specifier;
+	int (*f)(va_list);
+
 } specifier_t;
 
 int _write(char c);
