@@ -5,6 +5,7 @@ This repository will contain:
 A header file.
 1 or more function files.
 1 Manual file for the man page.
+Contents:
 Contents of Repo:
 This Readme file
 _printf.c     - The primary file for the printf recreation
