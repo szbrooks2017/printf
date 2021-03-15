@@ -21,4 +21,7 @@ int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_string(va_list args);
 int (*print_format(const char format))(va_list);
+int print_int(va_list args);
+int print_d_type_int(va_list args);
+
 #endif
