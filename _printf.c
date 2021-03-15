@@ -35,6 +35,7 @@ int _printf(const char *format, ...)
 			operator = print_format(format[indexf]);
 			if (operator == NULL)
 			{
+
 				_write(format[indexf]);
 			}
 			else
@@ -61,6 +62,7 @@ int (*print_format(const char format))(va_list)
 
 	specifier_t type[] = {
 	{"c", print_char},
+	{"%", print_percent},
 	{"s", print_string},
 	{"d", print_d_type_int},
 	{"i", print_int},
