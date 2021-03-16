@@ -1,0 +1,36 @@
+.\this is a comment
+.TH _printf 3
+.SH Name:
+_printf \- a function that outputs different data types.  Similar to printf()
+.SH Synopsis:
+# include holberton.h
+.BR _printf (const char *format, ...)
+.SH Description:
+_printf replicates the functionality of the function printf in the stdio.h header file
+.SH Options:
+.P
+%c: character.
+.P
+%s: string.
+.P
+%%: percentage.
+.P
+%i, %d: integer.
+.SH Examples:
+_printf(%c\n, char_var);.
+.P
+_printf(%sn, string_var);.
+.SH Exit Values:
+(1) \- success.
+.P
+(-1) \- failed.
+.SH Bugs:
+Untested with negative values, binary, hex, octal, length functions, unsigned, pointers
+.P
+flags: +, -, #, field width flags, precision flags, reversal or rot13
+.SH Author:
+Stratton Brooks and Jeffrey Winikoff
+.SH Copyright:
+Open-source
+.SH See Also:
+See man printf for additional information on things that can be included to add functionality
