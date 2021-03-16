@@ -4,6 +4,7 @@
 * _printf - Outputs a formatted string.
 * @format: Character string to print
 * Return: the number of characters printed.
+*
 */
 
 int _printf(const char *format, ...)
@@ -26,17 +27,15 @@ int _printf(const char *format, ...)
 		if (format[indexf] == '%')
 		{
 			indexf++;
-			if (format[indexf] == '\0')
-			{
-				return (-1);
-			}
+
 			while (format[indexf] == ' ')
 				indexf++;
 			operator = print_format(format[indexf]);
 			if (operator == NULL)
 			{
-
+				_write('%');
 				_write(format[indexf]);
+				count += 2;
 			}
 			else
 				count += operator(args);
