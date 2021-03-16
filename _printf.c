@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 
 	int (*operator)(va_list);
 
-	if (format == NULL)
+	if ((format == NULL) || (args == NULL))
 	{
 		return (-1);
 	}
