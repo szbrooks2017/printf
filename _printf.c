@@ -26,17 +26,15 @@ int _printf(const char *format, ...)
 		if (format[indexf] == '%')
 		{
 			indexf++;
-			if (format[indexf] == '\0')
-			{
-				return (-1);
-			}
+
 			while (format[indexf] == ' ')
 				indexf++;
 			operator = print_format(format[indexf]);
 			if (operator == NULL)
 			{
-
+				_write('%');
 				_write(format[indexf]);
+				count += 2;
 			}
 			else
 				count += operator(args);
