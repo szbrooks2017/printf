@@ -44,6 +44,11 @@ int print_string(va_list args)
 		}
 		return (i);
 	}
-	_write('\0');
-	return (1);
+	_write('(');
+	_write('n');
+	_write('u');
+	_write('l');
+	_write('l');
+	_write(')');
+	return (6);
 }
