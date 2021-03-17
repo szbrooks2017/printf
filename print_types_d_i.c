@@ -9,20 +9,14 @@ void recursive(int num);
  */
 int print_int(va_list args)
 {
-	recursive(va_arg(args, int));
+	int number = (va_arg(args, int));
+	if (number != 0)
+		recursive((unsigned int)number);
+	else
+		_write('0');
 	return (1);
 }
-/**
- *print_d_type_int - prints integers
- *@args: type to check against
- *
- *Return: 1
- */
-int print_d_type_int(va_list args)
-{
-	recursive(va_arg(args, int));
-	return (1);
-}
+
 /**
  *recursive - outputs digits recursively
  *@num: number to print
