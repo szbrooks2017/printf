@@ -32,8 +32,8 @@ int print_d_type_int(va_list args)
 void recursive(int num)
 {
 	int n;
-	n = num;
 
+	n = num;
 	if (n < 0)
 	{
 		_write('-');
@@ -41,7 +41,7 @@ void recursive(int num)
 	}
 	if (n / 10 != 0)
 	{
-		recursive (n / 10);
+		recursive(n / 10);
 		_write(n % 10 + '0');
 	}
 	else
