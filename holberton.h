@@ -1,8 +1,5 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-#ifndef NULL
-#define NULL  (void *)0
-#endif
 #include <stdlib.h>
 #include <stdarg.h>
 
