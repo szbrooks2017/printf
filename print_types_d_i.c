@@ -10,6 +10,7 @@ void recursive(int num);
 int print_int(va_list args)
 {
 	int number = (va_arg(args, int));
+
 	if (number != 0)
 		recursive((unsigned int)number);
 	else
