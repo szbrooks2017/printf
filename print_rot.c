@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 char *_strdup(char *str);
+
 /**
 * print_rot - rotated by 13
 * @args: is the va list
@@ -16,7 +17,7 @@ int print_rot(va_list args)
 	char *alph = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *rot = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	 str = _strdup(va_arg(args, char *));
+	 str = va_arg(args, char *);
 
 	if (str == NULL)
 		str = "(ahyy)";
@@ -27,8 +28,7 @@ int print_rot(va_list args)
 		{
 			if (str[i] == alph[n])
 			{
-				str[i] = rot[n];
-				_write(str[i]);
+				_write(rot[n]);
 				break;
 			}
 		}
@@ -37,7 +37,6 @@ int print_rot(va_list args)
 			_write(str[i]);
 		}
 	}
-	free(str);
 	return (1);
 }
 
