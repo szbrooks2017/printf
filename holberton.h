@@ -24,4 +24,7 @@ int (*print_format(const char format))(va_list);
 int print_int(va_list args);
 int print_d_type_int(va_list args);
 int print_percent(va_list args);
+int print_rot(va_list args);
+int rev_string(va_list args);
+
 #endif

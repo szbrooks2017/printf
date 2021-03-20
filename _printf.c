@@ -63,8 +63,10 @@ int (*print_format(const char format))(va_list)
 	{"c", print_char},
 	{"%", print_percent},
 	{"s", print_string},
-	{"d", print_d_type_int},
+	{"d", print_int},
 	{"i", print_int},
+	{"r", rev_string},
+	{"R", print_rot},
 	{NULL, NULL}
 	};
 
